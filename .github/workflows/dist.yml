@@ -34,7 +34,7 @@ jobs:
         with:
           args: --release --universal2 --out dist
       - name: Upload wheels
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: wheels
           path: dist
@@ -58,7 +58,7 @@ jobs:
           target: ${{ matrix.target }}
           args: --release --out dist
       - name: Upload wheels
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: wheels
           path: dist
@@ -80,7 +80,7 @@ jobs:
         sudo docker build -t flatterer-anylinux .
         sudo docker run  -v $(pwd):/io flatterer-anylinux build -f --release --out dist
     - name: Upload wheels
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: wheels
         path: dist
