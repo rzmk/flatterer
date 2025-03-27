@@ -22,7 +22,7 @@ flatterer-web = "0.20.1"
 env_logger = "0.10.1"
 log = "0.4.17"
 ctrlc = "3.2.2"
-csvs_convert = "0.8.6"
+csvs_convert = "0.9.1"
 num_cpus = "1.13.1"
 multi_reader = "0.1.0"
 
