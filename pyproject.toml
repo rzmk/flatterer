@@ -6,10 +6,11 @@ readme="README.md"
 repository="https://github.com/kindly/flatterer"
 homepage="https://flatterer.opendata.coop/index.html"
 documentation="https://flatterer.opendata.coop/index.html"
-license = {text= "MIT"}
+license = "License :: OSI Approved :: MIT License"
+dynamic = ["version"]
 
 [build-system]
-requires = ["maturin>=0.13,<0.14"]
+requires = ["maturin>=0.13"]
 build-backend = "maturin"
 
 [project.scripts]
