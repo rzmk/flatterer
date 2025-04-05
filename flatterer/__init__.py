@@ -251,7 +251,7 @@ def iterator_flatten(*args, **kw):
 @click.option('--id-prefix', default="", help='Prefix for all `_link` id fields')
 @click.option('--stats', is_flag=True, default=False, help='Produce stats about the data in the datapackage.json file')
 @click.argument('inputs', required=False, nargs=-1)
-@click.argument('output_directory', required=True)
+@click.argument('output_directory', required=False)
 def cli(
     inputs,
     output_directory,
@@ -300,6 +300,10 @@ def cli(
         setup_ctrlc()
         web_rs()
         return
+    
+    if not output_directory:
+        click.echo("An output directory is needed as second argument.")
+        raise click.Abort
     
     if not inputs:
         click.echo("An input file is needed as first argument.")

@@ -1,6 +1,6 @@
 [package]
 name = "flatterer"
-version = "0.20.2"
+version = "0.21.1"
 authors = ["David Raznick <kindly@gmail.com>"]
 edition = "2021"
 license = "MIT"
@@ -14,15 +14,15 @@ serde_json = { version = "1.0.83", features = ["preserve_order"] }
 pyo3 = { version = "0.18.3", features = ["extension-module", "eyre"] }
 eyre = "0.6.8"
 #libflatterer={path = "../libflatterer"}
-libflatterer = "0.20.1"
+libflatterer = "0.21.1"
 
-flatterer-web = "0.20.1"
+flatterer-web = "0.21.2"
 #flatterer-web={path = "../flatterer-web"}
 
 env_logger = "0.10.1"
 log = "0.4.17"
 ctrlc = "3.2.2"
-csvs_convert = "0.9.1"
+csvs_convert = "0.10.1"
 num_cpus = "1.13.1"
 multi_reader = "0.1.0"
 
